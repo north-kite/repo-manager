@@ -1,0 +1,29 @@
+module "this" {
+  source  = "dwp/repository/github"
+  version = "0.0.1"
+
+  name                            = var.name
+  description                     = var.description
+  homepage_url                    = var.homepage_url
+  visibility                      = var.visibility
+  has_issues                      = var.has_issues
+  has_downloads                   = var.has_downloads
+  has_projects                    = var.has_projects
+  has_wiki                        = var.has_wiki
+  delete_branch_on_merge          = var.delete_branch_on_merge
+  allow_merge_commit              = var.allow_merge_commit
+  allow_squash_merge              = var.allow_squash_merge
+  allow_rebase_merge              = var.allow_rebase_merge
+  auto_init                       = var.auto_init
+  archived                        = var.archived
+  topics                          = var.topics
+  labels                          = var.labels
+  template                        = var.template
+  team_access                     = var.team_access
+  branch_protection_enabled       = var.branch_protection_enabled
+  enforce_admins                  = var.enforce_admins
+  require_status_checks           = var.require_status_checks
+  dismiss_stale_reviews           = var.dismiss_stale_reviews
+  require_code_owner_reviews      = var.require_code_owner_reviews
+  required_approving_review_count = var.required_approving_review_count
+}
