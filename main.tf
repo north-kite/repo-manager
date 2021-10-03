@@ -15,3 +15,9 @@ module "manage_mysql_user" {
   name        = "manage-mysql-user"
   description = "Manages MySQL users"
 }
+
+module "manage_postgres_user" {
+  source      = "./github_repo"
+  name        = "manage-postgres-user"
+  description = "Manages PostgreSQL users"
+}
