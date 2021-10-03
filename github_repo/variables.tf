@@ -127,7 +127,7 @@ variable "team_access" {
     team_id = string
     access  = string
   }))
-  default = {}
+  default     = {}
   description = "A map of access to the repository"
 }
 
