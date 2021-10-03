@@ -140,7 +140,7 @@ variable "branch_protection_enabled" {
 
 variable "enforce_admins" {
   type        = bool
-  default     = true
+  default     = false
   description = "(Optional) Enforce status checks for repository administrators"
 }
 
