@@ -39,3 +39,16 @@ module "manage_postgres_user" {
     }
   }
 }
+
+module "terraform_aws_egress_proxy" {
+  source      = "./github_repo"
+  name        = "terraform-aws-egress-proxy"
+  description = "Squid egress proxy for AWS"
+
+  team_access = {
+    int_green = {
+      team_id = data.github_team.int_green.id
+      access  = "push"
+    }
+  }
+}
