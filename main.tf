@@ -52,3 +52,16 @@ module "terraform_aws_egress_proxy" {
     }
   }
 }
+
+module "kong_portal_cli_lambda" {
+  source      = "./github_repo"
+  name        = "kong-portal-cli-lambda"
+  description = "Lambda for running Kong Portal CLI"
+
+  team_access = {
+    int_green = {
+      team_id = data.github_team.int_green.id
+      access  = "push"
+    }
+  }
+}
