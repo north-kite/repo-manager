@@ -65,3 +65,9 @@ module "kong_portal_cli_lambda" {
     }
   }
 }
+
+module "terraform_aws_modsecurity_crs" {
+  source      = "./github_repo"
+  name        = "terraform-aws-modsecurity-crs"
+  description = "Terraform module to deploy ModSecurity Core Rule Set on AWS"
+}
