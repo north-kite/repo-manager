@@ -71,3 +71,9 @@ module "terraform_aws_modsecurity_crs" {
   name        = "terraform-aws-modsecurity-crs"
   description = "Terraform module to deploy ModSecurity Core Rule Set on AWS"
 }
+
+module "terraform_aws_gatus" {
+  source      = "./github_repo"
+  name        = "terraform-aws-gatus"
+  description = "Terraform module to deploy Gatus on AWS"
+}
