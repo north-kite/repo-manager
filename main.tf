@@ -77,3 +77,9 @@ module "terraform_aws_gatus" {
   name        = "terraform-aws-gatus"
   description = "Terraform module to deploy Gatus on AWS"
 }
+
+module "repo_template_terraform" {
+  source      = "./github_repo"
+  name        = "repo-template-terraform"
+  description = "Repo template for Terraform modules"
+}
