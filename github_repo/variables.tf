@@ -174,3 +174,9 @@ variable "required_approving_review_count" {
   default     = 1
   description = "(Optional) Require x number of approvals to satisfy branch protection requirements. If this is specified it must be a number between 1-6"
 }
+
+variable "is_template" {
+  type        = bool
+  default     = false
+  description = "Template repositories let users generate new repositories with the same directory structure and files."
+}

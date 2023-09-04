@@ -1,11 +1,12 @@
 module "this" {
   source  = "dwp/repository/github"
-  version = "0.0.1"
+  version = "0.0.4"
 
   name                            = var.name
   description                     = var.description
   homepage_url                    = var.homepage_url
   visibility                      = var.visibility
+  is_template                     = var.is_template
   has_issues                      = var.has_issues
   has_downloads                   = var.has_downloads
   has_projects                    = var.has_projects

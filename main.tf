@@ -87,4 +87,5 @@ module "repo_template_terraform" {
   source      = "./github_repo"
   name        = "repo-template-terraform"
   description = "Repo template for Terraform modules"
+  is_template = true
 }
