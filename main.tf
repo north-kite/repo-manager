@@ -72,11 +72,16 @@ module "terraform_aws_modsecurity_crs" {
   description = "Terraform module to deploy ModSecurity Core Rule Set on AWS"
 }
 
-#module "terraform_aws_gatus" {
-#  source      = "./github_repo"
-#  name        = "terraform-aws-gatus"
-#  description = "Terraform module to deploy Gatus on AWS"
-#}
+module "terraform_aws_gatus" {
+  source      = "./github_repo"
+  name        = "terraform-aws-gatus"
+  description = "Terraform module to deploy Gatus on AWS"
+
+  template = {
+    owner = "north-kite"
+    repo  = "repo-template-terraform"
+  }
+}
 
 module "repo_template_terraform" {
   source      = "./github_repo"
