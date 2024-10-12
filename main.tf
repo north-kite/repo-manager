@@ -89,3 +89,9 @@ module "repo_template_terraform" {
   description = "Repo template for Terraform modules"
   is_template = true
 }
+
+module "terramate_quickstart" {
+  source      = "./github_repo"
+  name        = "terramate-quickstart"
+  description = "Follow quickstart guide for Terramate"
+}
