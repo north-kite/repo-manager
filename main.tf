@@ -94,4 +94,5 @@ module "terramate_quickstart" {
   source      = "./github_repo"
   name        = "terramate-quickstart"
   description = "Follow quickstart guide for Terramate"
+  archived    = true
 }
